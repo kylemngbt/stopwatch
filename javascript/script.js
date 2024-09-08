@@ -1,6 +1,9 @@
 let [seconds, minutes, hours] = [0,0,0];
 const displayTime = document.querySelector("#display-time");
 let timer = null;
+const stopBtn = document.querySelector("#stop-btn");
+const startBtn = document.querySelector("#start-btn");
+const resetBtn = document.querySelector("#reset-btn");
 
 function stopwatch() {
   seconds++;
