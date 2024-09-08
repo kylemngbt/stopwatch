@@ -12,3 +12,7 @@ function stopwatch() {
     }
   }
 }
+
+function watchStart() {
+  setInterval(stopwatch,1000);
+}
