@@ -15,5 +15,8 @@ function stopwatch() {
 }
 
 function watchStart() {
-  setInterval(stopwatch,1000);
+  if (timer !== null) {
+    clearInterval(timer);
+  }
+  timer = setInterval(stopwatch,1000);
 }
