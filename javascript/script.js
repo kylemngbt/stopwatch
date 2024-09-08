@@ -15,6 +15,11 @@ function stopwatch() {
       hours++;
     }
   }
+  let h = hours < 10 ? "0" + hours : hours;
+  let m = minutes < 10 ? "0" + minutes : minutes;
+  let s = seconds < 10 ? "0" + seconds : seconds;
+
+  displayTime.textContent = `${h}:${m}:${s}`;
 }
 
 function watchStart() {
@@ -23,3 +28,5 @@ function watchStart() {
   }
   timer = setInterval(stopwatch,1000);
 }
+
+startBtn.addEventListener("click", watchStart);
