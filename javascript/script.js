@@ -29,4 +29,14 @@ function watchStart() {
   timer = setInterval(stopwatch,1000);
 }
 
+function watchStop() {
+  clearInterval(timer);
+}
+
+function watchReset() {
+  clearInterval(timer);
+  [seconds, minutes, hours] = [0,0,0];
+  displayTime.textContent = "00:00:00";
+}
+
 startBtn.addEventListener("click", watchStart);
