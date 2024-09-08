@@ -40,3 +40,5 @@ function watchReset() {
 }
 
 startBtn.addEventListener("click", watchStart);
+stopBtn.addEventListener("click", watchStop);
+resetBtn.addEventListener("click", watchReset);
